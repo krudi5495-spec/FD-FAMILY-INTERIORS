@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FD FAMILY INTERIORS - Custom Furniture & Interior Bandung</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            50: '#F8FAFC',
+                            100: '#F1F5F9',
+                            800: '#1E293B',
+                            900: '#0F172A',
+                        },
+                        wa: {
+                            green: '#059669',
+                            hover: '#047857'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FFFFFF;
+            color: #0F172A;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        /* Minimalist scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFFFFF;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94A3B8;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-slate-900 selection:text-white">
+
+    <!-- Top Notice Bar -->
+    <div class="bg-slate-900 text-slate-300 text-[11px] sm:text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1.5 sm:gap-2">
+            <div class="flex items-center gap-2 text-center sm:text-left">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+                <span class="text-slate-200 font-medium truncate">Jasa Custom Furniture Kitchen Set, Wardrobe & Backdrop TV Area Bandung Raya</span>
+            </div>
+            <a href="https://wa.me/6285850294549?text=Halo%20FD%20Family%20Interiors,%20saya%20ingin%20konsultasi%20furniture%20custom%20di%20Bandung." target="_blank" class="hover:text-white transition flex items-center gap-1.5 font-bold text-emerald-400 shrink-0">
+                <i class="fa-brands fa-whatsapp text-sm"></i> 085850294549
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                
+                <!-- Transparent Logo without Background or Box -->
+                <a href="#" class="flex items-center gap-2.5 sm:gap-3">
+                    <img src="https://i.ibb.co.com/fdvk0wjP/FD-Family-Interiors-Logo-1.png" alt="FD Family Interiors Logo" class="h-9 sm:h-11 w-auto object-contain">
+                    <span class="text-xs sm:text-base font-extrabold tracking-tight text-slate-900 uppercase">
+                        FD FAMILY <span class="font-normal text-slate-500">INTERIORS</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#layanan" class="text-xs font-semibold uppercase tracking-wider text-slate-600 hover:text-slate-900 transition">Layanan</a>
+                    <a href="#katalog" class="text-xs font-semibold uppercase tracking-wider text-slate-600 hover:text-slate-900 transition">Katalog Portofolio</a>
+                    <a href="#estimasi" class="text-xs font-semibold uppercase tracking-wider text-slate-600 hover:text-slate-900 transition">Hitung Biaya</a>
+                    <a href="#area" class="text-xs font-semibold uppercase tracking-wider text-slate-600 hover:text-slate-900 transition">Area Bandung</a>
+                </nav>
+
+                <!-- WhatsApp CTA Header -->
+                <div class="hidden sm:flex items-center">
+                    <a href="https://wa.me/6285850294549?text=Halo%20FD%20Family%20Interiors,%20saya%20ingin%20konsultasi%20layanan%20interior." target="_blank" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-4 py-2.5 rounded-full font-semibold text-xs tracking-wide transition-all shadow-xs">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+                        <span>085850294549</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-800 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-drawer" class="hidden md:hidden bg-white border-b border-slate-200 px-5 py-4 space-y-3">
+            <a href="#layanan" class="mobile-nav-link block py-2 text-xs font-bold uppercase tracking-wider text-slate-800">Layanan</a>
+            <a href="#katalog" class="mobile-nav-link block py-2 text-xs font-bold uppercase tracking-wider text-slate-800">Katalog Portofolio</a>
+            <a href="#estimasi" class="mobile-nav-link block py-2 text-xs font-bold uppercase tracking-wider text-slate-800">Hitung Biaya</a>
+            <a href="#area" class="mobile-nav-link block py-2 text-xs font-bold uppercase tracking-wider text-slate-800">Area Bandung</a>
+            <div class="pt-2 border-t border-slate-100">
+                <a href="https://wa.me/6285850294549?text=Halo%20FD%20Family%20Interiors,%20saya%20ingin%20konsultasi." target="_blank" class="w-full flex items-center justify-center gap-2 bg-wa-green text-white py-3 rounded-xl font-bold text-xs">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Hubungi WA 085850294549</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Clean Architectural Hero Section -->
+    <section class="py-12 sm:py-20 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                
+                <!-- Hero Content Left -->
+                <div class="lg:col-span-7 space-y-5 sm:space-y-6">
+                    <span class="text-xs font-bold tracking-widest text-slate-400 uppercase block">Desain & Pembuatan Custom Furniture</span>
+                    <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        Kitchen Set, Wardrobe & Backdrop TV Presisi Tinggi
+                    </h1>
+                    <p class="text-slate-600 text-xs sm:text-base font-normal leading-relaxed max-w-xl">
+                        Spesialis pengerjaan interior kustom menggunakan bahan Multiplek 18mm padat anti-rayap, finishing HPL/Duco rapi, serta gratis survey lokasi dan desain 3D untuk wilayah Bandung Raya.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+                        <a href="https://wa.me/6285850294549?text=Halo%20FD%20Family%20Interiors,%20saya%20ingin%20konsultasi%20gratis%20dan%20jadwal%20survey%20lokasi%20di%20Bandung." target="_blank" class="inline-flex items-center justify-center gap-2.5 bg-wa-green hover:bg-wa-hover text-white px-6 py-3.5 rounded-xl font-bold text-xs tracking-wide transition shadow-xs">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Konsultasi & Survey Bandung</span>
+                        </a>
+
+                        <a href="#katalog" class="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-900 px-6 py-3.5 rounded-xl font-bold text-xs transition">
+                            <span>Lihat Katalog (19 Foto)</span>
+                            <i class="fa-solid fa-arrow-down text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="pt-4 sm:pt-6 grid grid-cols-3 gap-2 sm:gap-4 border-t border-slate-100 text-xs">
+                        <div>
+                            <span class="block font-extrabold text-slate-900 text-xs sm:text-sm">Multiplek 18mm</span>
+                            <span class="text-slate-500 text-[10px] sm:text-xs">Anti Rayap & Padat</span>
+                        </div>
+                        <div>
+                            <span class="block font-extrabold text-slate-900 text-xs sm:text-sm">Free Survey</span>
+                            <span class="text-slate-500 text-[10px] sm:text-xs">Kota Bandung & Cimahi</span>
+                        </div>
+                        <div>
+                            <span class="block font-extrabold text-slate-900 text-xs sm:text-sm">Garansi Resmi</span>
+                            <span class="text-slate-500 text-[10px] sm:text-xs">Hasil Rapih Presisi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Preview Card -->
+                <div class="lg:col-span-5 mt-4 lg:mt-0">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-xs">
+                        <img src="https://i.ibb.co.com/cSXtL1MQ/Whats-App-Image-2026-10-15-at-21-59-49.jpg" alt="Kitchen Set Custom FD Family Interiors" class="w-full h-[280px] sm:h-[380px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <span class="text-[10px] font-bold tracking-widest uppercase opacity-80 block">Proyek Pilihan</span>
+                            <h3 class="font-bold text-xs sm:text-sm">Kitchen Set Minimalis Modern</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="layanan" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-xl mb-10">
+                <span class="text-xs font-bold tracking-widest text-slate-400 uppercase block mb-1">LAYANAN UTAMA</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Spesialis Furniture Custom</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-5 sm:gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-slate-400 transition">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center text-lg mb-4">
+                            <i class="fa-solid fa-kitchen-set"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 mb-2">Kitchen Set Custom</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Pengerjaan Kitchen Set L-Shape, Straight, maupun Island Bar. Dilengkapi top granite sintetis/solid surface dan engsel soft-close.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-5 border-t border-slate-100">
+                        <a href="https://wa.me/6285850294549?text=Halo%20FD%20Family%20Interiors,%20saya%20ingin%20konsultasi%20pembuatan%20Kitchen%20Set." target="_blank" class="text-xs font-bold text-slate-900 hover:text-emerald-600 transition flex items-center gap-1.5">
+                            <span>Konsultasi Kitchen Set</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-slate-400 transition">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center text-lg mb-4">
+                            <i class="fa-solid fa-door-closed"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 mb-2">Lemari & Wardrobe</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Wardrobe pintu swing/sliding, pintu kaca tempered, walk-in closet, meja rias terintegrasi, dan penyimpanan rahasia full plafond.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-5 border-t border-slate-100">
+                        <a href="https://wa.me/6285850294549?text=Halo%20FD%20Family%20Interiors,%20saya%20ingin%20konsultasi%20pembuatan%20Lemari/Wardrobe." target="_blank" class="text-xs font-bold text-slate-900 hover:text-emerald-600 transition flex items-center gap-1.5">
+                            <span>Konsultasi Lemari</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-slate-400 transition">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center text-lg mb-4">
+                            <i class="fa-solid fa-tv"></i>
+                        </div>
+                        <h3 class="text-base font-bold text-slate-900 mb-2">Backdrop TV & Wall Panel</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Backdrop TV bermotif marmer, kisi-kisi kayu (woodpanel), ambalan gantung lampu LED tersembunyi, dan partisi penyekat ruangan.
+                        </p>
+                    </div>
+                    <div class="pt-5 mt-5 border-t border-slate-100">
+                        <a href="https://wa.me/6285850294549?text=Halo%20FD%20Family%20Interiors,%20saya%20ingin%20konsultasi%20pembuatan%20Backdrop%20TV." target="_blank" class="text-xs font-bold text-slate-900 hover:text-emerald-600 transition flex items-center gap-1.5">
+                            <span>Konsultasi Backdrop TV</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFECTLY RESPONSIVE CATALOG / PORTFOLIO SECTION -->
+    <section id="katalog" class="py-16 sm:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8 gap-3">
+                <div>
+                    <span class="text-xs font-bold tracking-widest text-slate-400 uppercase block mb-1">KATALOG PORTOFOLIO (19 FOTO)</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Koleksi Proyek Selesai</h2>
+                </div>
+                <p class="text-slate-500 text-xs max-w-md">
+                    Ketuk foto untuk memperbesar gambar serta berkonsultasi mengenai model spesifik langsung melalui WhatsApp.
+                </p>
+            </div>
+
+            <!-- Responsive Category Filter Tabs (Horizontal Scrollable on Mobile) -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-6 no-scrollbar" id="filter-buttons-container">
+                <button onclick="filterGallery('all', this)" class="filter-btn active bg-slate-900 text-white px-4 py-2 rounded-full text-xs font-bold tracking-wide transition-all whitespace-nowrap shadow-xs">
+                    Semua (19)
+                </button>
+                <button onclick="filterGallery('kitchen', this)" class="filter-btn bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition-all whitespace-nowrap">
+                    Kitchen Set (6)
+                </button>
+                <button onclick="filterGallery('wardrobe', this)" class="filter-btn bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition-all whitespace-nowrap">
+                    Lemari & Wardrobe (5)
+                </button>
+                <button onclick="filterGallery('backdrop', this)" class="filter-btn bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition-all whitespace-nowrap">
+                    Backdrop TV (5)
+                </button>
+                <button onclick="filterGallery('interior', this)" class="filter-btn bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition-all whitespace-nowrap">
+                    Interior Set (3)
+                </button>
+            </div>
+
+            <!-- Optimized Responsive Grid: 2 Columns on Mobile, 3 on Tablet, 4 on Desktop -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-4" id="gallery-container">
+                <!-- Javascript populates all 19 cards dynamically -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Cost Estimator Section -->
+    <section id="estimasi" class="py-16 sm:py-20 bg-slate-50 border-t border-b border-slate-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-8 sm:mb-10">
+                <span class="text-xs font-bold tracking-widest text-slate-400 uppercase block mb-1">SIMULASI BUDGET</span>
+                <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">Kalkulator Estimasi Biaya</h2>
+                <p class="text-slate-500 text-xs mt-1">Dapatkan perkiraan instan biaya pengerjaan furniture kustom Anda.</p>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-2xl p-5 sm:p-8 shadow-xs">
+                <div class="space-y-5 sm:space-y-6">
+                    
+                    <!-- Step 1: Furniture Type -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">1. Jenis Furniture</label>
+                        <select id="calc-category" onchange="calculateCost()" class="w-full bg-slate-50 border border-slate-200 text-slate-800 rounded-xl p-3 text-xs font-semibold focus:outline-none focus:border-slate-900">
+                            <option value="kitchen">Kitchen Set Custom (Per Meter Lari)</option>
+                            <option value="wardrobe">Lemari Pakaian / Wardrobe (Per Meter Lari/m²)</option>
+                            <option value="backdrop">Backdrop TV & Wall Panel (Per m²)</option>
+                        </select>
+                    </div>
+
+                    <!-- Step 2: Size Slider -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider">2. Ukuran Estimasi</label>
+                            <span class="text-slate-900 font-extrabold text-xs" id="size-label">3.0 Meter</span>
+                        </div>
+                        <input type="range" id="calc-size" min="1" max="10" step="0.5" value="3.0" oninput="calculateCost()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-slate-900">
+                        <div class="flex justify-between text-[10px] text-slate-400 mt-1.5">
+                            <span>1 Meter</span>
+                            <span>5 Meter</span>
+                            <span>10 Meter</span>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Finishing Options -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">3. Pilihan Finishing</label>
+                        <div class="grid grid-cols-3 gap-2">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="calc-finish" value="hpl_std" checked onchange="calculateCost()" class="peer hidden">
+                                <div class="text-center py-2.5 px-1.5 rounded-xl border border-slate-200 bg-slate-50 peer-checked:border-slate-900 peer-checked:bg-slate-900 peer-checked:text-white text-xs font-semibold text-slate-700 transition">
+                                    HPL Standard
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="calc-finish" value="hpl_prem" onchange="calculateCost()" class="peer hidden">
+                                <div class="text-center py-2.5 px-1.5 rounded-xl border border-slate-200 bg-slate-50 peer-checked:border-slate-900 peer-checked:bg-slate-900 peer-checked:text-white text-xs font-semibold text-slate-700 transition">
+                                    HPL Motif/Tekstur
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="calc-finish" value="duco" onchange="calculateCost()" class="peer hidden">
+                                <div class="text-center py-2.5 px-1.5 rounded-xl border border-slate-200 bg-slate-50 peer-checked:border-slate-900 peer-checked:bg-slate-900 peer-checked:text-white text-xs font-semibold text-slate-700 transition">
+                                    Cat Duco Premium
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Result Box -->
+                    <div class="pt-3 border-t border-slate-100">
+                        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center space-y-1.5">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Estimasi Perkiraan Biaya</span>
+                            <div class="text-lg sm:text-2xl font-extrabold text-slate-900" id="calc-result-text">
+                                Rp 5.400.000 - Rp 6.200.000
+                            </div>
+                            <p class="text-[11px] text-slate-500 leading-snug">
+                                Termasuk Multiplek 18mm, aksesoris standar, serta bebas biaya kirim & pasang area Bandung.
+                            </p>
+                        </div>
+
+                        <button onclick="sendCalculatedWA()" class="mt-4 w-full flex items-center justify-center gap-2 bg-wa-green hover:bg-wa-hover text-white py-3.5 rounded-xl font-bold text-xs transition">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Kirim Rincian Estimasi ke WhatsApp</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Work Process Section -->
+    <section class="py-16 sm:py-20 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-10">
+                <span class="text-xs font-bold tracking-widest text-slate-400 uppercase block mb-1">PROSES PENGERJAAN</span>
+                <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">4 Langkah Alur Kerja</h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
+                <div class="p-4 sm:p-5 rounded-2xl border border-slate-100 bg-slate-50">
+                    <span class="text-xs font-extrabold text-slate-400 block mb-1">01</span>
+                    <h3 class="font-bold text-slate-900 text-xs sm:text-sm mb-1">Diskusi Awal</h3>
+                    <p class="text-slate-500 text-[11px] leading-relaxed">Konsultasi model dan perkiraan ukuran via WhatsApp.</p>
+                </div>
+                <div class="p-4 sm:p-5 rounded-2xl border border-slate-100 bg-slate-50">
+                    <span class="text-xs font-extrabold text-slate-400 block mb-1">02</span>
+                    <h3 class="font-bold text-slate-900 text-xs sm:text-sm mb-1">Survey Lokasi</h3>
+                    <p class="text-slate-500 text-[11px] leading-relaxed">Tim datang mengukur akurat lokasi Anda di Bandung.</p>
+                </div>
+                <div class="p-4 sm:p-5 rounded-2xl border border-slate-100 bg-slate-50">
+                    <span class="text-xs font-extrabold text-slate-400 block mb-1">03</span>
+                    <h3 class="font-bold text-slate-900 text-xs sm:text-sm mb-1">Desain 3D</h3>
+                    <p class="text-slate-500 text-[11px] leading-relaxed">Pemastian visual 3D, pilihan HPL, dan kepastian budget.</p>
+                </div>
+                <div class="p-4 sm:p-5 rounded-2xl border border-slate-100 bg-slate-50">
+                    <span class="text-xs font-extrabold text-slate-400 block mb-1">04</span>
+                    <h3 class="font-bold text-slate-900 text-xs sm:text-sm mb-1">Produksi & Pasang</h3>
+                    <p class="text-slate-500 text-[11px] leading-relaxed">Pengerjaan di workshop & instalasi bersih di rumah Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Area Layanan Bandung Section -->
+    <section id="area" class="py-14 sm:py-16 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-12 gap-6 sm:gap-8 items-center">
+                <div class="md:col-span-8 space-y-2 sm:space-y-3">
+                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest block">WILAYAH OPERASIONAL</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Melayani Seluruh Area Bandung Raya</h2>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Kota Bandung, Kota Cimahi, Bandung Barat, Kabupaten Bandung, Lembang, Dago, Buah Batu, Kopo, Antapani, dan sekitarnya.
+                    </p>
+                </div>
+                <div class="md:col-span-4 text-left md:text-right">
+                    <a href="https://wa.me/6285850294549?text=Halo%20FD%20Family%20Interiors,%20saya%20ingin%20jadwalkan%20survey%20lokasi%20di%20Bandung." target="_blank" class="inline-flex items-center gap-2 bg-wa-green hover:bg-wa-hover text-white px-6 py-3.5 rounded-xl font-bold text-xs transition">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Jadwalkan Survey Lokasi</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="flex items-center gap-3">
+                    <img src="https://i.ibb.co.com/fdvk0wjP/FD-Family-Interiors-Logo-1.png" alt="FD Family Interiors Logo" class="h-8 w-auto object-contain">
+                    <span class="text-sm font-extrabold text-slate-900 uppercase">FD FAMILY INTERIORS</span>
+                </div>
+
+                <div class="text-xs text-slate-500 text-center">
+                    Spesialis Custom Furniture Kitchen Set, Wardrobe & Backdrop TV Bandung Raya
+                </div>
+
+                <a href="https://wa.me/6285850294549" target="_blank" class="text-xs font-bold text-slate-900 hover:text-emerald-600 transition flex items-center gap-1.5">
+                    <i class="fa-brands fa-whatsapp text-emerald-500 text-sm"></i>
+                    <span>085850294549</span>
+                </a>
+
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-slate-100 text-center text-[11px] text-slate-400">
+                &copy; 2026 FD FAMILY INTERIORS. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-5 right-5 z-40">
+        <a href="https://wa.me/6285850294549?text=Halo%20FD%20Family%20Interiors,%20saya%20ingin%20konsultasi%20pembuatan%20furniture." target="_blank" class="w-12 h-12 sm:w-14 sm:h-14 bg-wa-green hover:bg-wa-hover text-white rounded-full flex items-center justify-center shadow-xl transition-transform hover:scale-105" aria-label="WhatsApp Chat">
+            <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+        </a>
+    </div>
+
+    <!-- Responsive Lightbox Modal for Photo Details -->
+    <div id="image-modal" class="fixed inset-0 z-50 hidden bg-slate-950/85 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4" onclick="handleBackdropClick(event)">
+        <div class="relative max-w-2xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+            
+            <!-- Close Button with Large Touch Target -->
+            <button onclick="closeModal()" class="absolute top-3 right-3 z-20 w-9 h-9 rounded-full bg-slate-900/80 text-white flex items-center justify-center hover:bg-slate-900 text-base focus:outline-none" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Image Container -->
+            <div class="bg-slate-900 flex items-center justify-center p-1 sm:p-2 overflow-hidden flex-1 min-h-[220px]">
+                <img id="modal-img" src="" alt="Detail Proyek" class="max-h-[60vh] sm:max-h-[70vh] w-auto max-w-full object-contain rounded-lg">
+            </div>
+
+            <!-- Modal Bottom Details & WhatsApp CTA -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white border-t border-slate-100">
+                <div>
+                    <h3 id="modal-title" class="text-xs sm:text-sm font-bold text-slate-900">Hasil Pengerjaan Custom Furniture</h3>
+                    <p class="text-[11px] text-slate-500 mt-0.5">Bahan Multiplek 18mm Padat & Finishing HPL Kualitas Presisi</p>
+                </div>
+                <a id="modal-wa-btn" href="#" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-wa-green hover:bg-wa-hover text-white px-5 py-3 rounded-xl font-bold text-xs transition shadow-xs">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Tanya Model Ini via WA</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Core Javascript Code -->
+    <script>
+        // Exact 19 Image URLs mapped with Titles and Categories
+        const projectsData = [
+            { url: 'https://i.ibb.co.com/cSXtL1MQ/Whats-App-Image-2026-10-15-at-21-59-49.jpg', category: 'kitchen', categoryName: 'Kitchen Set', title: 'Kitchen Set Minimalis Island' },
+            { url: 'https://i.ibb.co.com/VYvDBk4m/Whats-App-Image-2026-10-15-at-21-59-50-1.jpg', category: 'wardrobe', categoryName: 'Lemari & Wardrobe', title: 'Wardrobe & Lemari Pakaian' },
+            { url: 'https://i.ibb.co.com/vCFKcGtC/Whats-App-Image-2026-10-15-at-21-59-50.jpg', category: 'backdrop', categoryName: 'Backdrop TV', title: 'Backdrop TV Custom' },
+            { url: 'https://i.ibb.co.com/1YdLcBsS/Whats-App-Image-2026-10-15-at-21-59-51-1.jpg', category: 'kitchen', categoryName: 'Kitchen Set', title: 'Kitchen Set Modern HPL' },
+            { url: 'https://i.ibb.co.com/Kx0DjN3K/Whats-App-Image-2026-10-15-at-21-59-51.jpg', category: 'wardrobe', categoryName: 'Lemari & Wardrobe', title: 'Lemari Sliding Glass' },
+            { url: 'https://i.ibb.co.com/D2VdPMg/Whats-App-Image-2026-10-15-at-21-59-52-1.jpg', category: 'backdrop', categoryName: 'Backdrop TV', title: 'Backdrop TV LED Ambient' },
+            { url: 'https://i.ibb.co.com/1YSkB133/Whats-App-Image-2026-10-15-at-21-59-52-2.jpg', category: 'interior', categoryName: 'Interior Set', title: 'Interior Kamar Utama' },
+            { url: 'https://i.ibb.co.com/xqdkpLf6/Whats-App-Image-2026-10-15-at-21-59-52.jpg', category: 'kitchen', categoryName: 'Kitchen Set', title: 'Kitchen Set Dapur Basah' },
+            { url: 'https://i.ibb.co.com/Y7867TDM/Whats-App-Image-2026-10-15-at-21-59-53-1.jpg', category: 'wardrobe', categoryName: 'Lemari & Wardrobe', title: 'Wardrobe Full Height' },
+            { url: 'https://i.ibb.co.com/5gLNkcK4/Whats-App-Image-2026-10-15-at-21-59-53.jpg', category: 'backdrop', categoryName: 'Backdrop TV', title: 'Backdrop TV Marble Panel' },
+            { url: 'https://i.ibb.co.com/G42rQ3yB/Whats-App-Image-2026-10-15-at-21-59-54.jpg', category: 'interior', categoryName: 'Interior Set', title: 'Interior Ruang Keluarga' },
+            { url: 'https://i.ibb.co.com/35L7RvSh/Whats-App-Image-2026-10-15-at-21-59-55-1.jpg', category: 'kitchen', categoryName: 'Kitchen Set', title: 'Kitchen Set Mini Bar' },
+            { url: 'https://i.ibb.co.com/cX1yPPpT/Whats-App-Image-2026-10-15-at-21-59-55-2.jpg', category: 'wardrobe', categoryName: 'Lemari & Wardrobe', title: 'Walk-in Closet Luxury' },
+            { url: 'https://i.ibb.co.com/8nJzTffy/Whats-App-Image-2026-10-15-at-21-59-55.jpg', category: 'backdrop', categoryName: 'Backdrop TV', title: 'Backdrop TV Minimalis Wood' },
+            { url: 'https://i.ibb.co.com/HTkt42X1/Whats-App-Image-2026-10-15-at-21-59-56-1.jpg', category: 'kitchen', categoryName: 'Kitchen Set', title: 'Kitchen Set Scandinavian' },
+            { url: 'https://i.ibb.co.com/PGwvp8Z4/Whats-App-Image-2026-10-15-at-21-59-56-2.jpg', category: 'wardrobe', categoryName: 'Lemari & Wardrobe', title: 'Lemari Baju Custom' },
+            { url: 'https://i.ibb.co.com/Y74g3GL5/Whats-App-Image-2026-10-15-at-21-59-56.jpg', category: 'backdrop', categoryName: 'Backdrop TV', title: 'Backdrop TV & Desk' },
+            { url: 'https://i.ibb.co.com/r2SY13CH/Whats-App-Image-2026-10-15-at-21-59-57.jpg', category: 'interior', categoryName: 'Interior Set', title: 'Interior Master Bedroom' },
+            { url: 'https://i.ibb.co.com/cSs3Jk33/Whats-App-Image-2026-10-15-at-21-59-58.jpg', category: 'kitchen', categoryName: 'Kitchen Set', title: 'Kitchen Set Grey Modern' }
+        ];
+
+        let currentFilter = 'all';
+
+        // Render Gallery function with touch & desktop optimization
+        function renderGallery(filter = 'all') {
+            currentFilter = filter;
+            const container = document.getElementById('gallery-container');
+            container.innerHTML = '';
+
+            const filteredProjects = filter === 'all' 
+                ? projectsData 
+                : projectsData.filter(p => p.category === filter);
+
+            filteredProjects.forEach((item) => {
+                const originalIndex = projectsData.indexOf(item);
+                const card = document.createElement('div');
+                
+                // Responsive card styling with aspect-ratio 4:3
+                card.className = 'group relative rounded-xl overflow-hidden bg-slate-100 cursor-pointer aspect-4/3 border border-slate-200 transition-all duration-300 hover:shadow-md';
+                card.onclick = () => openModal(originalIndex);
+
+                card.innerHTML = `
+                    <img src="${item.url}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    
+                    <!-- Gradient Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-90 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-2.5 sm:p-3">
+                        <span class="self-start bg-slate-900/80 backdrop-blur-md text-white px-2 py-0.5 rounded text-[9px] sm:text-[10px] font-bold tracking-wide">
+                            ${item.categoryName}
+                        </span>
+                        <div class="flex items-center justify-between gap-1">
+                            <span class="text-white text-[11px] sm:text-xs font-bold leading-tight truncate">${item.title}</span>
+                            <span class="bg-white/90 text-slate-900 p-1.5 sm:px-2 sm:py-1 rounded-full text-[10px] font-bold shadow-xs flex items-center gap-1 shrink-0">
+                                <i class="fa-brands fa-whatsapp text-emerald-600"></i>
+                                <span class="hidden sm:inline">Tanya</span>
+                            </span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Filter buttons handler
+        function filterGallery(category, btnEl) {
+            document.querySelectorAll('#filter-buttons-container .filter-btn').forEach(btn => {
+                btn.className = 'filter-btn bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition-all whitespace-nowrap';
+            });
+            btnEl.className = 'filter-btn active bg-slate-900 text-white px-4 py-2 rounded-full text-xs font-bold tracking-wide transition-all whitespace-nowrap shadow-xs';
+
+            renderGallery(category);
+        }
+
+        // Lightbox Modal functions
+        function openModal(idx) {
+            const item = projectsData[idx];
+            document.getElementById('modal-img').src = item.url;
+            document.getElementById('modal-title').innerText = `${item.title} - ${item.categoryName}`;
+            
+            const waMsg = encodeURIComponent(`Halo FD Family Interiors, saya tertarik dengan model ${item.title} (${item.categoryName}) pada contoh portofolio Anda (${item.url}). Mohon info estimasi biaya dan jadwal survey ke lokasi.`);
+            document.getElementById('modal-wa-btn').href = `https://wa.me/6285850294549?text=${waMsg}`;
+
+            document.getElementById('image-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            document.getElementById('image-modal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        function handleBackdropClick(e) {
+            if (e.target.id === 'image-modal') {
+                closeModal();
+            }
+        }
+
+        // Close modal on ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Interactive Cost Calculator
+        function calculateCost() {
+            const category = document.getElementById('calc-category').value;
+            const size = parseFloat(document.getElementById('calc-size').value);
+            const finishing = document.querySelector('input[name="calc-finish"]:checked').value;
+
+            document.getElementById('size-label').innerText = `${size.toFixed(1)} Meter`;
+
+            let basePrice = 1800000;
+            if (category === 'kitchen') basePrice = 1800000;
+            else if (category === 'wardrobe') basePrice = 1900000;
+            else if (category === 'backdrop') basePrice = 1500000;
+
+            let finishMult = 1.0;
+            if (finishing === 'hpl_prem') finishMult = 1.2;
+            if (finishing === 'duco') finishMult = 1.45;
+
+            const minCost = Math.round(size * basePrice * finishMult);
+            const maxCost = Math.round(minCost * 1.15);
+
+            const fmt = (n) => 'Rp ' + n.toLocaleString('id-ID');
+            document.getElementById('calc-result-text').innerText = `${fmt(minCost)} - ${fmt(maxCost)}`;
+        }
+
+        function sendCalculatedWA() {
+            const categoryText = document.getElementById('calc-category').options[document.getElementById('calc-category').selectedIndex].text;
+            const size = document.getElementById('calc-size').value;
+            const resText = document.getElementById('calc-result-text').innerText;
+
+            const text = `Halo FD Family Interiors Bandung, saya membuat simulasi estimasi di website:
+- Pekerjaan: ${categoryText}
+- Ukuran: ${size} Meter
+- Estimasi Biaya: ${resText}
+
+Mohon bantuan konsultasi dan informasi jadwal survey lokasi gratis di Bandung.`;
+
+            window.open(`https://wa.me/6285850294549?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileDrawer.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileDrawer.classList.add('hidden');
+            });
+        });
+
+        // Initialize gallery and calculator on load
+        window.addEventListener('DOMContentLoaded', () => {
+            renderGallery();
+            calculateCost();
+        });
+    </script>
+</body>
+</html>
